@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+</head>
+<body>
+    <b>Aluno:</b> Maíra de Oliveira Silva
+       <div style="white-space: pre"></div>
+
+    <b>Matrícula:</b> 120221202412330312
+       <div style="white-space: pre"></div>
+
+
+
+
+    <form action="cadastraCliente.php" method="post">
+
+        <fieldset style="border-radius:20px;">
+            <legend><h1 style="color:midnightblue;">Dados Pessoais</h1></legend>
+
+            <label style="">Nome:</label>
+                <input type="text" name="nome" id="nome" minlength="2" maxlength="50" required>
+                   <div style="white-space: pre"></div>
+                
+            <label>Data de Nascimento:</label>
+                <input type="date" name="datanasc" id="datanasc" required>
+                   <div style="white-space: pre"></div>
+
+            <label>Número de Celular:</label>
+                <input type="tel" name="numcel" id="numcel" pattern="(xx)xxxx-xxxxx" required> 
+                    <div style="white-space: pre"></div>
+
+            <label>E-mail:</label>
+                <input type="email" name="email" id="email" required>
+                    <div style="white-space: pre"></div>
+
+            <label>CPF:</label>
+                <input type="number" name="CPF" id="CPF" pattern="xxx.xxx.xxx-xx" required>
+                    <div style="white-space: pre"></div>
+
+            <label>CEP:</label>
+                <input type="number" name="CEP" id="CEP" pattern="xxxxx-xxx" required>
+                    <div style="white-space: pre"></div>
+
+                    <label>Foto 3x4:</label>
+                    <input type="file" name="foto" id="foto">
+                    <div style="white-space: pre"></div>
+
+            <label>Gênero:</label>
+            <input type="radio" name="Sexo" value="masc" checked/> Masculino
+                <input type="radio" name="Sexo" value="fem"/> Feminino
+                    <input type="radio" name="none" value="none"/> Prefiro não dizer
+                   <div style="white-space: pre"></div>
+                   
+            <label>Estado Civil:</label>
+                <input type="radio" name="estciv" value="solteiro" checked/> Solteiro(a)
+                <input type="radio" name="estciv" value="casado" checked/> Casado(a)
+                    <div style="white-space: pre"></div>
+
+            <label>Nacionalidade:</label>
+            <select name="nacionalidade" id="nacionalidade">
+                <option value="BRA"> Brasil</option>
+                <option value="CND"> Canadá</option>
+                <option value="CHN"> China</option>
+                <option value="FRN"> França</option>
+                <option value="JPN"> Japão</option>
+                <option value="KRN"> Coréia</option>
+                <option value="MXN"> Mexico</option>
+                <option value="ITL"> Italia </option>
+                <option value="EUA"> Estados Unidos</option>
+                <option value="CUB"> Cuba</option>
+            </select>
+            <div style="white-space: pre"></div>
+        </fieldset>
+
+
+
+        <fieldset style="border-radius:20px;">
+            <legend><h1 style="color:navy;">Endereço de Entrega</h1></legend>
+
+            <label>País/Região:</label>
+            <select name="pais" id="pais">
+                <option value="BRA"> Brasil</option>
+                <option value="CND"> Canadá</option>
+                <option value="CHN"> China</option>
+                <option value="FRN"> França</option>
+                <option value="JPN"> Japão</option>
+                <option value="KRN"> Coréia</option>
+                <option value="MXN"> Mexico</option>
+                <option value="ITL"> Italia </option>
+                <option value="EUA"> Estados Unidos</option>
+                <option value="CUB"> Cuba</option>
+            </select>
+            <div style="white-space: pre"></div>
+
+            <label>Nome:</label>
+                <input type="text" name="nome1" id="nome1" minlength="2" maxlength="50" required>
+                   <div style="white-space: pre"></div>
+
+            <label>Número de Celular:</label>
+            <input type="tel" name="numcelu" id="numcelu" pattern="(xx)xxxx-xxxxx" required>
+            <div style="white-space: pre"></div>
+
+            <label>CEP:</label>
+            <div style="white-space: pre"></div>
+            <input type="number" name="CEP1" id="CEP1" pattern="xxxxx-xxx" required>
+            <div style="white-space: pre"></div>
+
+            <label>Estado:
+                <select name="Estado">
+                     <option value="ac"> Acre </option>
+                     <option value="al"> Alagoas </option>
+                     <option value="ap"> Amapá </option>
+                     <option value="am"> Amazonas </option>
+                     <option value="ba"> Bahia </option>
+                     <option value="ce"> Ceará </option>
+                     <option value="df"> Distrito Federal </option>
+                     <option value="es"> Espiríto Santo </option>
+                     <option value="go"> Goiás </option>
+                     <option value="ma"> Maranhão </option>
+                     <option value="mt"> Mato Grosso </option>
+                     <option value="ms"> Mato Grosso do Sul </option>
+                     <option value="mg"> Minas Gerais </option>
+                     <option value="pa"> Pará </option>
+                     <option value="pb"> Paraíba </option>
+                     <option value="pr"> Paraná </option>
+                     <option value="pe"> Pernambuco </option>
+                     <option value="pi"> Piauí </option>
+                     <option value="rj"> Rio de Janeiro </option>
+                     <option value="rn"> Rio Grande do Norte</option>
+                     <option value="rs"> Rio Grande do Sul </option>
+                     <option value="ro"> Rondônia </option>
+                     <option value="rr"> Roraima </option>
+                     <option value="sc"> Santa Catarina </option>
+                     <option value="sp"> São Paulo </option>
+                     <option value="se"> Sergipe </option>
+                     <option value="to"> Tocantins </option>
+                </select>
+            </label>
+            <div style="white-space: pre"></div>
+
+            <label>Logradouro:</label>
+            <input type="text" name="lograd" id="lograd" required>
+            <div style="white-space: pre"></div>
+
+            <label >Bairro:</label>
+            <input type="text" name="bairro" id="bairro" required>
+            <div style="white-space: pre"></div>
+
+            <label>Rua:</label>
+            <input type="text" name="rua" id="rua" required>
+            <div style="white-space: pre"></div>
+
+            <label>nº da Residência:</label>
+            <input type="number" name="numresid" id="numresid" maxlength="10" required>
+            <div style="white-space: pre"></div>
+
+            <label>Complemento:</label>
+            <div style="white-space: pre"></div>
+            <textarea name="comp" cols="20" rows="5" maxlength="200">
+            </textarea>
+            <div style="white-space: pre"></div>
+
+
+
+
+
+        </fieldset>
+
+        <fieldset style="border-radius:20px;">
+            <legend><h1 style="color:darkslategrey;">Informações Adicionais</h1></legend>
+
+                <label>Nome do Pai:</label>
+                    <input type="text" name="nomepai" id="nomepai" minlength="2" maxlength="50">
+                        <div style="white-space: pre"></div>
+                        
+                <label>Nome do Mãe:</label>
+                    <input type="text" name="nomemae" id="nomemae" minlength="2" maxlength="50">
+                        <div style="white-space: pre"></div>
+
+                <label>Telefone Fixo:</label>
+                    <input type="tel" name="telfix" id="telfix" pattern="(xx)xxxx-xxxxx" required>
+                        <div style="white-space: pre"></div>
+
+                <label type="hidden">E-mail Secundário:</label>
+                    <input type="email" name="email2" id="email2">
+                        <div style="white-space: pre"></div>
+
+                 <label>Escolaridade:
+                    <select name="escolaridade">
+                        <option value="em"> Ensino Médio </option>
+                        <option value="nt"> Nível Técnico </option>
+                        <option value="ns"> Nível Superior </option>
+                    </select>
+                </label>
+                <div style="white-space: pre"></div>
+
+                <label>Área de Interesse:</label>
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area1" value="com" /> Computação
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area2" value="bio" /> Biologia
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area3" value="mea" /> Meio Ambiente
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area4" value="eng" /> Engenharia
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area5" value="his" /> História
+                    <div style="white-space: pre"></div>
+
+                    <input type="checkbox" name="area6" value="ped" /> Pedagogia
+                    <div style="white-space: pre"></div>
+                    
+                    <input type="checkbox" name="area7" value="artp" /> Artes Plásticas
+                    <div style="white-space: pre"></div>
+                    <input type="checkbox" name="area8" value="artc" /> Artes Cênicas
+                    <div style="white-space: pre"></div>
+
+                    <label>Conte-nos mais um pouco sobre você:</label>
+                    <div style="white-space: pre"></div>
+                    <textarea name="sobre" cols="30" rows="10" maxlength="500">
+                    </textarea>
+                <div style="white-space: pre"></div>  
+                
+                
+
+        </fieldset>
+                   
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+        <button class="botao" type="reset" onsubmit="">Limpar</button>
+
+
+
+
+    </form>
+    
+</body>
+</html>
